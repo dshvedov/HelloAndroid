@@ -15,7 +15,6 @@
             android:layout_height="match_parent"
             android:background="@color/imageBackground"
             android:src="@drawable/contour"
-            android:contentDescription="Image background"
             android:scaleType="centerCrop" />
         <ImageView
             android:layout_width="@dimen/logo"
@@ -24,7 +23,7 @@
             android:layout_centerVertical="true"
             android:background="@color/imageBackground"
             android:src="@drawable/udacity_logo"
-            android:contentDescription="Udacity logo"
+            android:contentDescription="@string/business_logo_desc"
             android:scaleType="centerCrop" />
     </RelativeLayout>
         <TextView
@@ -45,5 +44,4 @@
             android:drawableLeft="@drawable/icon_call"
             android:text="@string/business_contacts"
             android:autoLink="all" />
-
 </LinearLayout>
