@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ru.d9d.helloandroid.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/imageBackground"
+            android:src="@drawable/contour"
+            android:contentDescription="Image background"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/imageBackground"
+            android:src="@drawable/udacity_logo"
+            android:contentDescription="Udacity logo"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+        <TextView
+            style="@style/ContactsHeader"
+            android:paddingTop="@dimen/margin"
+            android:paddingBottom="@dimen/spacing"
+            android:drawableLeft="@drawable/icon_info"
+            android:text="@string/business_name" />
+        <TextView
+            style="@style/ContactsText"
+            android:paddingBottom="@dimen/spacing"
+            android:drawableLeft="@drawable/icon_map"
+            android:text="@string/business_address"
+            android:autoLink="all" />
+        <TextView
+            style="@style/ContactsText"
+            android:paddingBottom="@dimen/margin"
+            android:drawableLeft="@drawable/icon_call"
+            android:text="@string/business_contacts"
+            android:autoLink="all" />
+
+</LinearLayout>
